@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family :'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(140deg, #0073ff, #9500ff);
+    padding: 10px;
+}
+.Todolist{
+    width: 600px;
+    min-height: 550px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 20px 70px;
+    border-radius: 20px;
+}
+.title{
+    margin-left: 150px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    display:inline;
+    text-align: justify;
+    align-items: center;    
+}
+
+.todo_icon{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 153, 255, 0.644);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;   
+    font-size: 50px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    text-emphasis-color: #000;
+    background: transparent;
+    padding: 10px;
+    font-weight: 100px;
+    font-size: 30px;
+}
+
+button{
+    width: 150px;
+    align-items: center;
+    height: 53px;
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 40px;
+    border: none;
+    outline: none;
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(0, 132, 255);
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    color:#000;
+    padding: 17px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url(https://cdn-icons-png.flaticon.com/128/6756/6756004.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration:line-through;
+}
+
+ul li.checked::before{
+    background-image:
+    url(https://cdn-icons-png.flaticon.com/128/10495/10495642.png);
+    background-size: 50px;
+}
+ul li span {
+   position: absolute;
+   right: 0;
+   top : 5px;
+   width: 40px;
+   height: 40px;
+   font-size: 22px;
+   color: #555;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #d0d0d0 ;
+}
